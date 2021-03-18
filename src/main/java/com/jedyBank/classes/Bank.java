@@ -64,7 +64,7 @@ public class Bank implements IBank {
 
         }
 
-        return false;
+       else return false;
     }
 
     private Branch findBranch(String branchName){
