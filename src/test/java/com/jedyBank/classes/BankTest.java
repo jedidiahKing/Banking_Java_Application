@@ -1,25 +1,34 @@
 package com.jedyBank.classes;
 
-import junit.framework.TestCase;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 
-public class BankTest extends TestCase {
+import static org.junit.Assert.*;
 
+public class BankTest {
+
+    @Before
     public void setUp() throws Exception {
-        super.setUp();
     }
 
+    @After
     public void tearDown() throws Exception {
     }
 
-    public void testAddBranch() {
+    @Test
+    public void addBranch() {
     }
 
-    public void testAddCustomer() {
+    @Test
+    public void addCustomer() {
     }
 
-    public void testAddCustomerTransaction() {
+    @Test
+    public void addCustomerTransaction() {
     }
 
-    public void testListCustomers() {
+    @Test
+    public void listCustomers() {
     }
 }

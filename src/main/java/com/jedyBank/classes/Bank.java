@@ -4,6 +4,7 @@ import com.jedyBank.interfaces.IBank;
 
 import java.util.ArrayList;
 
+
 public class Bank implements IBank {
     private String name;
     private ArrayList<Branch> branches;
