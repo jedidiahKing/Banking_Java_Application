@@ -40,7 +40,7 @@ public class BankTest {
 
     @Test
     public void addCustomerTransaction() {
-        //This method should allow a customer in a branch deposit to deposit
+        //This method should allow a customer in a branch deposit to branch
         assertTrue(bank.addCustomerTransaction("London Branch", "John", 500.00));
         // This method show that a customer who is not in the branch can't deposit in that branch
         assertFalse(bank.addCustomerTransaction("London Branch", "Mary", 500.00));
