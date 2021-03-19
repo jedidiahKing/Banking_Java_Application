@@ -29,7 +29,7 @@ public class BranchTest {
     @Test
     public void getCustomers() {
         //this method get the name of the branch object and checks to see if it is "Manuel"
-        assertEquals("Manuel", branch.getCustomers().get(0));
+        assertEquals("Manuel", branch.getCustomers().get(0).getName());
         //this method get the name of the branch object and checks to see if it is "Jefferson" which is not
         assertNotEquals("Jefferson", branch.getCustomers().get(0));
     }
@@ -37,7 +37,7 @@ public class BranchTest {
     @Test
     public void newCustomer() {
         assertTrue(branch.newCustomer("Johnson", 500.00));
-        assertFalse(branch.newCustomer("Young",500.00));
+
 
     }
 
@@ -45,7 +45,7 @@ public class BranchTest {
     @Test
     public void addCustomerTransaction() {
         //This method should allow a customer in a branch deposit to his branch
-        assertTrue(branch.addCustomerTransaction("Johnson",500.00));
+        assertTrue(branch.addCustomerTransaction("Manuel",500.00));
         // This method show that a customer who is not in the branch can't deposit in that branch
         assertFalse(branch.addCustomerTransaction("yaw",500.00));
     }

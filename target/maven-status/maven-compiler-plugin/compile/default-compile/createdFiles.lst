@@ -1,0 +1,6 @@
+com\jedyBank\interfaces\IBranch.class
+com\jedyBank\classes\Customer.class
+com\jedyBank\interfaces\IBank.class
+com\jedyBank\interfaces\ICustomer.class
+com\jedyBank\classes\Bank.class
+com\jedyBank\classes\Branch.class
